@@ -74,5 +74,5 @@ where u.id = c.fk_usuario group by c.nome, u.id; -- group by = agrupamento por
 
  --<<<<< Contadores >>>>>--
 select c.nome, u.nome count(c.id) from usuario u, cargo c
-where u.id = c.fk_usuario group by c.nome, u.id; -- Operador count é par contar a quantidade de ocorrencia naquela coluna
+where u.id = c.fk_usuario group by c.nrador count é par contar a quantidade de ocorrencia naquela coluna
 
