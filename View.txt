@@ -1,0 +1,18 @@
+Visão é uma tabela simples derivadas de outras tabelas. (Tabela virtual)
+
+1° Nodificações de consultas - é criada a cada consultas;
+2° Tabela de visão - é criada na primeira consulta;
+
+-------------> VISÃO É SO CONSULTA <-------------
+
+View materializada - é uma tabela que se torna real, a partir de dados de outras tabelas (nao existe no mySQL)
+
+
+View materializada -- POSTGRESQL
+CREATE MATERIALIZED View mv_total_presencas AS
+SELECT NOME, ROUND(AVG(EXTRACT(YEAR FROM AGE(DATA_NASCIMENTO_ALUNO))), 2) AS IDADE
+FROM ALUNO GROUP BY NOME;
+
+Segundo o google: 
+Sim, existem visualizações materializadas no SQL Server,
+que são chamadas de "Visualizações indexadas". 

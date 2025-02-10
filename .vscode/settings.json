@@ -1,15 +1,6 @@
 {
     "sqltools.connections": [
         {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "driver": "PostgreSQL",
-            "name": "aula2",
-            "database": "Aula",
-            "username": "postgres"
-        },
-        {
             "mysqlOptions": {
                 "authProtocol": "default",
                 "enableSsl": "Disabled"
@@ -18,8 +9,8 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "AulasMySQL",
-            "database": "aulas_digix",
+            "name": "Aulas",
+            "database": "ex_views",
             "username": "root"
         }
     ]
