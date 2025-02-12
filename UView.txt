@@ -16,3 +16,8 @@ FROM ALUNO GROUP BY NOME;
 Segundo o google: 
 Sim, existem visualizações materializadas no SQL Server,
 que são chamadas de "Visualizações indexadas". 
+
+====================================================================================
+Se o MySQL não funcionar direito, use esse código:
+"use + (nome do database)
+use aula12_02; --> exemplo

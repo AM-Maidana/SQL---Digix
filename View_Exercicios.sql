@@ -1,6 +1,6 @@
 --==================================================
 --              EXERCÍCIOS - VIEW
---                  AULA 05
+--           10/02/2025 - SEGUNDA-FEIRA
 --==================================================
 
 -- DICA: Quando for muitos -- cria uma tabela de relacionamento

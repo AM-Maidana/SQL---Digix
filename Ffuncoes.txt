@@ -1,0 +1,143 @@
+Funções são subprogramas que têm por objetivo executar uma ação
+específica.
+
+Vantagens: Centralização, Segurança e Abragência da linguagem SQL
+
+• As funções aceitam parametros;
+• As funções podem ser definidas pelo usuário ou podem chamadas as funções embutidas
+• Três tipos: Numéricas, as Datas e as de String
+
+===== Funções definidas pelo usuário ====
+create function → Cria uma função personalizada
+ex: CREATE FUNCTION nome_da_funcao (nome da variavel e o tipo dela) RETURNS tipo_de_retorno 
+BEGIN instruções 
+END
+
+ex: CREATE FUNCTION nome_da_funcao (nome da variavel e o tipo dela) RETURNS tipo_de_retorno 
+DETERMINISTIC BEGIN instruções -- é uma clausula opcional que indica que a função retorna o mesmo resultado para os mesmos argumentos de entrada
+END
+
+
+SELECT nome_da_funcao (valor); - chama a função
+
+
+
+
+
+===== Funções de String do MySQL =====
+
+ASCII → Retorna o valor ASCII de um caractere específico
+CHAR_LENGTH → Retorna o comprimento de uma string (em caracteres)
+CHARACTER_LENGTH → Retorna o comprimento de uma string (em caracteres)
+CONCAT → Junta duas ou mais expressões
+CONCAT_WS → Junta duas ou mais expressões com um separador
+FIELD → Retorna a posição de um valor dentro de uma lista de valores
+FIND_IN_SET → Retorna a posição de uma string dentro de uma lista de strings
+FORMAT → Formata um número no formato "#,###,###.##", arredondando para um número especificado de casas decimais
+INSERT → Insere uma string dentro de outra string em uma posição especificada
+INSTR → Retorna a posição da primeira ocorrência de uma string dentro de outra string
+LCASE → Converte uma string para minúsculas
+LEFT → Extrai um número de caracteres de uma string (começando da esquerda)
+LENGTH → Retorna o comprimento de uma string (em bytes)
+LOCATE → Retorna a posição da primeira ocorrência de uma substring dentro de uma string
+LOWER → Converte uma string para minúsculas
+LPAD → Adiciona caracteres à esquerda de uma string até atingir um comprimento especificado
+LTRIM → Remove espaços em branco à esquerda de uma string
+MID → Extrai uma substring de uma string (a partir de uma posição específica)
+POSITION → Retorna a posição da primeira ocorrência de uma substring dentro de uma string
+REPEAT → Repete uma string um número especificado de vezes
+REPLACE → Substitui todas as ocorrências de uma substring dentro de uma string por uma nova substring
+REVERSE → Inverte uma string e retorna o resultado
+RIGHT → Extrai um número de caracteres de uma string (começando da direita)
+RPAD → Adiciona caracteres à direita de uma string até atingir um comprimento especificado
+RTRIM → Remove espaços em branco à direita de uma string
+SPACE → Retorna uma string contendo um número especificado de espaços
+STRCMP → Compara duas strings
+SUBSTR → Extrai uma substring de uma string (a partir de uma posição específica)
+SUBSTRING → Extrai uma substring de uma string (a partir de uma posição específica)
+SUBSTRING_INDEX → Retorna uma parte de uma string antes de um número específico de ocorrências de um delimitador
+TRIM → Remove espaços em branco no início e no final de uma string
+UCASE → Converte uma string para maiúsculas
+UPPER → Converte uma string para maiúsculas
+
+
+===== Funções Numéricas do MySQL =====
+
+ABS → Retorna o valor absoluto de um número
+ACOS → Retorna o arco cosseno de um número
+ASIN → Retorna o arco seno de um número
+ATAN → Retorna o arco tangente de um ou dois números
+ATAN2 → Retorna o arco tangente de dois números
+AVG → Retorna a média de um conjunto de valores
+CEIL → Retorna o menor número inteiro maior ou igual a um número
+CEILING → Retorna o menor número inteiro maior ou igual a um número
+COS → Retorna o cosseno de um número
+COT → Retorna a cotangente de um número
+COUNT → Retorna o número de registros retornados por uma consulta
+DEGREES → Converte um valor de radianos para graus
+DIV → Utilizado para divisão inteira
+EXP → Retorna o número "e" elevado a uma potência especificada
+FLOOR → Retorna o maior número inteiro menor ou igual a um número
+GREATEST → Retorna o maior valor de uma lista de argumentos
+LEAST → Retorna o menor valor de uma lista de argumentos
+LN → Retorna o logaritmo natural de um número
+LOG → Retorna o logaritmo natural de um número ou o logaritmo de um número em uma base específica
+LOG10 → Retorna o logaritmo na base 10 de um número
+LOG2 → Retorna o logaritmo na base 2 de um número
+MAX → Retorna o maior valor dentro de um conjunto de valores
+MIN → Retorna o menor valor dentro de um conjunto de valores
+MOD → Retorna o resto de uma divisão entre dois números
+PI → Retorna o valor de PI
+POW → Retorna o valor de um número elevado a outra potência
+POWER → Retorna o valor de um número elevado a outra potência
+RADIANS → Converte um valor em graus para radianos
+RAND → Retorna um número aleatório
+ROUND → Arredonda um número para um número especificado de casas decimais
+SIGN → Retorna o sinal de um número (-1, 0 ou 1)
+SIN → Retorna o seno de um número
+SQRT → Retorna a raiz quadrada de um número
+SUM → Calcula a soma de um conjunto de valores
+TAN → Retorna a tangente de um número
+TRUNCATE → Trunca um número para um número especificado de casas decimais
+
+
+===== Funções de Data do MySQL =====
+
+ADDDATE → Adiciona um intervalo de tempo/data a uma data e retorna o resultado
+ADDTIME → Adiciona um intervalo de tempo a um datetime e retorna o resultado
+CURDATE → Retorna a data atual
+CURRENT_DATE → Retorna a data atual
+CURRENT_TIME → Retorna a hora atual
+CURRENT_TIMESTAMP → Retorna a data e hora atuais
+CURTIME → Retorna a hora atual
+DATE → Extrai a parte da data de uma expressão datetime
+DATEDIFF → Retorna o número de dias entre duas datas
+DATE_ADD → Adiciona um intervalo de tempo/data a uma data e retorna o resultado
+DATE_FORMAT → Formata uma data
+DATE_SUB → Subtrai um intervalo de tempo/data de uma data e retorna o resultado
+DAY → Retorna o dia do mês de uma data
+DAYNAME → Retorna o nome do dia da semana de uma data
+DAYOFMONTH → Retorna o dia do mês de uma data
+DAYOFWEEK → Retorna o índice do dia da semana de uma data
+DAYOFYEAR → Retorna o número do dia no ano para uma data
+EXTRACT → Extrai uma parte específica de uma data
+FROM_DAYS → Retorna uma data com base em um valor numérico de dias
+HOUR → Retorna a parte da hora de uma data
+LAST_DAY → Retorna o último dia do mês para uma data especificada
+NOW → Retorna a data e hora atuais
+
+
+===== Funções Avançadas do MySQL =====
+
+BIN → Retorna a representação binária de um número
+BINARY → Converte um valor para uma string binária
+CASE → Percorre condições e retorna um valor quando a primeira condição é atendida
+CAST → Converte um valor para um tipo de dado especificado
+COALESCE → Retorna o primeiro valor não nulo em uma lista
+CONNECTION_ID → Retorna o ID da conexão atual
+CONV → Converte um número de um sistema numérico para outro
+CURRENT_USER → Retorna o nome e host do usuário MySQL atual
+DATABASE → Retorna o nome do banco de dados atual
+IF → Retorna um valor se a condição for verdadeira, ou outro valor se for falsa
+SESSION_USER → Retorna o usuário e host da sessão atual
+VERSION → Retorna a versão do MySQL
