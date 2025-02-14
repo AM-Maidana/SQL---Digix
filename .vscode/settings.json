@@ -12,6 +12,15 @@
             "name": "Aulas",
             "database": "ex_views",
             "username": "root"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Digix",
+            "database": "Aula_Digix",
+            "username": "postgres"
         }
     ]
 }
