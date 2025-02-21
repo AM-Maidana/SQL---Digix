@@ -22,5 +22,6 @@
             "database": "Aula_Digix",
             "username": "postgres"
         }
-    ]
+    ],
+    "dotnet.defaultSolution": "Banco.sln"
 }
